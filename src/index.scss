@@ -1,0 +1,37 @@
+body{
+    background-color: grey;
+}
+.card{
+    display: inline-block;
+    background-color: white;
+    margin: auto;
+    height: 500px;
+    width: 200px;
+    padding: 20px;
+    padding-top: 180px;
+    line-height: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+     
+    .top-suit{
+        content: '/2660';
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 80px;
+    }
+    .bottom-suit{
+        content: '/2660';
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 80px;
+    }
+    &.spade:before, &.spade:after{ content: '/2660';}
+    &.club:before, &.club.after{ content: '/2663';}
+    &.heart:before, &.heart:after{ content: '/2665'; color: red;}
+    &.diamond:before, &.diamond.after{ content: '/2666'; color: red;}
+
+        
+    }
+}
